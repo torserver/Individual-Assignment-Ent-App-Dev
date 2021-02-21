@@ -5,8 +5,8 @@ import edu.uc.cech.soit.myclassjournal.dto.JournalEntry;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
-/**
- * @author Tor Vaz
+/*
+  @author Tor Vaz
  */
 
 import java.util.List;
