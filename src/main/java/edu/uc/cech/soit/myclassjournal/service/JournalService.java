@@ -5,8 +5,9 @@ import edu.uc.cech.soit.myclassjournal.dto.JournalEntry;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
-/*
+/**
   @author Tor Vaz
+  this implements the IJournalService interface
  */
 
 import java.util.List;
