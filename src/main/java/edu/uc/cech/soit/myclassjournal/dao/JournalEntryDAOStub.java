@@ -13,28 +13,30 @@ this is the JournalEntry DAO class which implements the interface class
 @Component
 public class JournalEntryDAOStub implements IJournalEntryDAO {
 
+    List<JournalEntry> allJournalEntries = new ArrayList<JournalEntry>();
     HashMap<Integer, JournalEntry> journalEntryMap = new HashMap<>();
 
 //    saves journal entries
     @Override
     public void save(JournalEntry journalEntry) {
-        journalEntry.setEntryID(journalEntryMap.size());
-        journalEntryMap.put(journalEntry.getEntryID(), journalEntry);
+        allJournalEntries.add(journalEntry);
+        /*journalEntry.setEntryID(allJournalEntries.size());
+        allJournalEntries.put(journalEntry.getEntryID(), journalEntry);*/
     }
 //  deletes or removes entries
     @Override
     public void remove(int entryID) {
-        journalEntryMap.remove(entryID);
+        allJournalEntries.remove(entryID);
     }
 //  returns journal entry by ID
     @Override
     public JournalEntry getEntryByID(int entryID) {
-        journalEntryMap.get(entryID);
+        allJournalEntries.get(entryID);
         return null;
     }
 //  returns all journal entries in list
     @Override
     public List<JournalEntry> getAllEntries() {
-        return new ArrayList<>(journalEntryMap.values());
+        return allJournalEntries;
     }
 }

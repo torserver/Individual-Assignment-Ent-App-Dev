@@ -4,7 +4,7 @@ import edu.uc.cech.soit.myclassjournal.dto.JournalEntry;
 import java.util.List;
 
 /**
-this is the DAO nterface class
+this is the DAO interface class
 @author Tor Vaz
 */
 
