@@ -11,7 +11,7 @@ this is the JournalEntry DAO class which implements the interface class
 */
 
 @Component
-public class JournalEntryDAO implements IJournalEntryDAO {
+public class JournalEntryDAOStub implements IJournalEntryDAO {
 
     HashMap<Integer, JournalEntry> journalEntryMap = new HashMap<>();
 
